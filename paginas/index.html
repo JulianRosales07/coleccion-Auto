@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY COLECTION</title>
+    <link rel="stylesheet" href="/estilos/Style.css"/>
+    <link rel="icon" type="image/png" href="/assets/sparkar.svg">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="/assets/logoPG.png" alt="Logo" class="logo"  >
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/paginas/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/paginas/mostrarColeccion.html" class="nav-link">Coleccion</a></li>
+            <li class="nav-item"><a href="/paginas/filtar.html" class="nav-link">Filtros</a></li>
+            <li class="nav-item"><a href="/paginas/compararAuto.html" class="nav-link">Comparar</a></li>
+            <li class="nav-item"><a href="/paginas/agregarAuto.html" class="nav-link">Agregar Auto</a></li>
+            <li class="nav-item"><a href="/paginas/favoritos.html" class="nav-link">Ver favoritos</a></li>
+    </nav>
+    
+    
+    <div class="container3">
+            <div class="header">
+                <h1>Luxury Collection</h1>
+            </div>
+            <div class="content">
+                <h2>Bienvenidos a Luxury Collection</h2>
+                <p>En Luxury Collection, nos dedicamos a ofrecer una experiencia inigualable en el mundo del automóvil de lujo. Nuestra selección incluye las marcas más prestigiosas y modelos exclusivos que representan la cúspide de la ingeniería y el diseño automotriz.</p>
+                <h2>Nuestra Misión</h2>
+                <p>Nuestra misión es superar las expectativas de los coleccionistas más exigentes, proporcionando vehículos que no solo son un medio de transporte, sino una declaración de estilo y un símbolo de sofisticación.</p>
+                <h2>Nuestros Valores</h2>
+                <ul>
+                    <li><strong>Exclusividad:</strong> Cada automóvil en nuestra colección es seleccionado por su rareza y su linaje de excelencia.</li>
+                    <li><strong>Calidad:</strong> Garantizamos que cada vehículo cumple con los más altos estándares de rendimiento y lujo.</li>
+                    <li><strong>Servicio Personalizado:</strong> Ofrecemos un servicio personalizado para asegurar que la experiencia de cada cliente sea tan única como su colección.</li>
+                </ul>
+                <h2>Invitación</h2>
+                <p>Le invitamos a descubrir nuestra colección y a ser parte de un mundo donde el lujo y la pasión por los automóviles se unen para crear algo verdaderamente extraordinario.</p>
+                
+                <form id="mostrarColeccionForm" action="SvAutos" method="GET">
+                    <button type="button" onclick="mostrarColeccion()" class="btn btn-primary">Mostrar Colección</button> 
+                </form>
+                <form id="agregarAuto" action="SvAutos" method="GET">
+                    <button type="button" onclick="agregarAuto()" class="btn btn-primary">Agregar Auto</button> 
+                </form>
+            </div>
+    </div>
+    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

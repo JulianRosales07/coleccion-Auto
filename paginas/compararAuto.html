@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY COLECTION</title>
+    <link rel="stylesheet" href="/estilos/Style.css"/>
+    <link rel="icon" type="image/png" href="/assets/sparkar.svg">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="/assets/logoPG.png" alt="Logo" class="logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/paginas/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/paginas/mostrarColeccion.html" class="nav-link">Coleccion</a></li>
+            <li class="nav-item"><a href="/paginas/filtar.html" class="nav-link">Filtros</a></li>
+            <li class="nav-item"><a href="/paginas/compararAuto.html" class="nav-link">Comparar</a></li>
+            <li class="nav-item"><a href="/paginas/agregarAuto.html" class="nav-link">Agregar Auto</a></li>
+            <li class="nav-item"><a href="/paginas/favoritos.html" class="nav-link">Ver favoritos</a></li>
+    </nav>
+    
+
+    <div class="container3">
+        <h2><strong>Comparar Autos</strong></h2>
+
+        <form id="comparisonForm">
+            <label for="car1">Seleccione el primer auto:</label>
+            <select id="car1" name="car1" onchange="actualizarComparacion()">
+                <option value="">Seleccione un auto...</option>
+                <!-- Opciones de autos cargadas dinámicamente -->
+            </select>
+    
+            <label for="car2">Seleccione el segundo auto:</label>
+            <select id="car2" name="car2" onchange="actualizarComparacion()">
+                <option value="">Seleccione un auto...</option>
+                <!-- Opciones de autos cargadas dinámicamente -->
+            </select>
+        </form>
+        
+    
+        <div id="comparisonContainer">
+            <!-- Aquí se mostrarán los resultados de la comparación -->
+        </div>
+    
+        
+    </div>
+    <script src="/scripts/compararAuto.js"></script>
+</body>
+</html>

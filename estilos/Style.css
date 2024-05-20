@@ -1,0 +1,816 @@
+body {
+    background: url('https://images.caricos.com/p/porsche/2021_porsche_911_turbo_s/images/1024x768/2021_porsche_911_turbo_s_20_1024x768.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40; /* Color de fondo */
+    padding: 10px 20px;
+}
+
+.navbar-brand img {
+    height: 50px; /* Altura del logo */
+    margin-right: 10px;
+}
+
+.navbar-brand a {
+    color: #fff; /* Color del texto de la marca */
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.nav-link {
+    color: #fff; /* Color del texto de los enlaces */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+    animation: changeColor 1s infinite alternate; /* Animación de cambio de color */
+}
+
+@keyframes changeColor {
+    from {
+        color: #fff; /* Color inicial */
+    }
+    to {
+        color: #f0ad4e; /* Color final al hacer hover */
+    }
+}
+
+.nav-link:hover {
+    animation: none; /* Detener la animación al hacer hover */
+}
+
+
+
+
+
+/* Estilos para las tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 130px;
+    padding: 10px;
+}
+
+.column {
+    flex: 0 0 calc(20% - 20px); /* Ancho de columna */
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+    height: 380px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    width: 100%; /* Cambia el ancho de las imágenes al 100% del contenedor */
+    height: 150px; /* Cambia el alto de las imágenes según tu preferencia */
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 10px; /* Reducir el padding */
+}
+
+.card-title {
+    font-size: 1rem; /* Tamaño de la fuente reducido */
+    margin-bottom: 5px; /* Espacio inferior reducido */
+}
+
+.card-text {
+    margin-bottom: 10px; /* Espacio inferior reducido */
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px 8px; /* Tamaño reducido */
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px; /* Tamaño de la fuente reducido */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el formulario de búsqueda */
+
+
+/* Keyframes para la animación del botón */
+
+.logo {
+   width: 90%;
+   height: 10%;
+}
+.container4 {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.916); /* Fondo semi-transparente del formulario */
+    border-radius: 10px;
+    margin: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container3 {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.916); /* Fondo semi-transparente del formulario */
+    border-radius: 10px;
+    margin: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container2 {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #686869bc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.container {
+    position: fixed;
+    bottom: 20px; /* Distancia desde la parte inferior */
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color:#343a4082;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pulseButton 1s infinite alternate;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: transparent; /* Color de fondo del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+   
+}
+#h11{
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 96%;
+    padding: 9px;
+    margin-bottom: 15px;
+    border: 1.5px solid #020202fe; /* Color del borde de los campos de entrada */
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+    width: 100%;
+    padding: 10px;
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.title {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.marca {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modelo {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #777;
+    font-size: 14px;
+}
+.header {
+    text-align: center;
+    padding: 20px 0;
+}
+.header h1 {
+    margin: 0;
+    color: #333;
+}
+.content {
+    line-height: 1.6;
+}
+.content p {
+    color: #666;
+}
+.content h2 {
+    color: #333;
+}
+.footer {
+    position: absolute;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #aaa;
+}
+
+.preview-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.delete-button {
+    background-color: #ff6347; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 1px 10px; /* Espacio interno */
+    cursor: pointer; /* Cursor de puntero */
+    margin-top: 10px; /* Margen superior */
+}
+
+.delete-button:hover {
+    background-color: #ff473a; /* Color de fondo al pasar el mouse */
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Aumentar el espacio entre los elementos */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px; /* Aumentar el espacio entre los elementos */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+button1 {
+    text-align: center;
+    display: block;
+    margin: 0 auto; /* Centrar el botón */
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agregar transición al cambio de color */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+button {
+    display: block;
+    margin: 0 auto; /* Centrar el botón */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agregar transición al cambio de color */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 15px; /* Aumentar el espacio interno */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 8px 0; /* Ajustar el espacio entre los párrafos */
+}
+
+#resultado {
+    margin-top: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Aumentar el espacio entre los elementos */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px; /* Aumentar el espacio entre los elementos */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    margin: 0 auto; /* Centrar el botón */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Agregar transición al cambio de color */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    margin-top: 20px;
+    padding: 15px; /* Aumentar el espacio interno */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card p {
+    margin: 8px 0; /* Ajustar el espacio entre los párrafos */
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+:root {
+    --primary: #2E31A6;
+    --text-color: white;
+    --white: white;
+    --text-gray: #FEFEFE;
+    --text-heading-gray: #D0D0F7;
+    --background: #EDF0F9;
+    --border: #aabfff;
+}
+
+/*? footer reset */
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.subscription-section {
+    margin: 0 auto;
+    margin-top: auto;
+    padding: 3rem 1rem;
+    max-width: 64rem;
+    width: 100%;
+}
+
+/*? subscribe section */
+.subscription-wrapper {
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    min-height: 11.5rem;
+    gap: 2rem;
+    color: var(--primary);
+    background-color: var(--background);
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscription__description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    flex-grow: 1;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.subscribe-form > input {
+    border: 1px solid var(
+        --button-border);
+    color: var(--primary);
+    outline: none;
+    min-height: 3rem;
+    background-color: var(
+        --white);
+    font-size: 1.2rem;
+    flex-grow: 3;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+.subscribe-form > input:focus {
+    border: 1px solid var(
+        --primary);
+}
+
+.subscribe-form > 
+input::placeholder {
+    color: var(--text-heading-gray);
+}
+
+.subscribe-form > button {
+    cursor: pointer;
+    background-color: var(
+        --primary);
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-size: 1.25rem;
+    min-height: 3rem;
+    flex-grow: 1;
+    white-space: nowrap;
+    padding: 0.5rem 0.75rem;
+    border: 0;
+    outline: none;
+    border: 1px solid var(
+        --button-border);
+}
+
+/*? footer containers */
+footer {
+    bottom: 0;
+    background-color: var(
+        --primary);
+    width: 100%;
+    min-width: 20rem;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 4;
+    gap: 3rem 1rem;
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5rem 0.5rem 2.25rem 0.5rem;
+}
+
+.footer-columns section, 
+.footer-columns .footer-logo {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 10rem;
+    max-width: 10rem;
+}
+ 
+.footer-columns ul {
+    display: flex;
+    gap: 0.75rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.footer-columns ul a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.footer-columns ul a:hover{
+    text-decoration: underline;
+}
+
+.footer-columns h3 {
+    color: var(--text-heading-gray);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 1rem;
+    flex-grow: 1;
+    max-width: 10rem;
+    margin-bottom: 3rem;
+}
+
+.footer-logo svg {
+    stroke: var(--text-color);
+    stroke-width: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+/*? Footer bottom */
+.footer-bottom {
+    margin-top: 3rem;
+    display: flex;
+    align-items: end;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--text-color);
+    border-top: 1px solid var(
+        --border);
+}
+
+.footer-bottom > small {
+    margin: 0 0.25rem;
+}
+
+.footer-headline > h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.footer-headline > p {
+    color: var(--text-color);
+    margin: 0.25rem 0 1.25rem 0;
+}
+
+.footer-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-description h3 {
+    margin-bottom: 0.5rem;
+}
+
+/*? socials */
+
+.social-wrapper {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    justify-content: end;
+    margin-bottom: 1rem;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.social-links img {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+.social-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    list-style-type: none;
+}
+
+/*? mobile */
+@media (min-width: 926px) {
+    .footer-logo {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0.5rem 2rem 0.5rem;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .social-wrapper {
+        justify-content: center;
+    }
+}
+
+/* Estilos para el formulario de comparación */
+#comparisonForm {
+    background-color: #e7e7e71f;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 50 50  50 #000;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Estilos para el contenedor de comparación */
+#comparisonContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}

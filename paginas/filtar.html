@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>LUXURY COLECTION</title>
+        <link rel="stylesheet" href="/estilos/Style.css"/>
+        <link rel="icon" type="image/png" href="/assets/sparkar.svg">
+    </head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="/assets/logoPG.png" alt="Logo" class="logo">
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="/paginas/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="/paginas/mostrarColeccion.html" class="nav-link">Coleccion</a></li>
+            <li class="nav-item"><a href="/paginas/filtar.html" class="nav-link">Filtros</a></li>
+            <li class="nav-item"><a href="/paginas/compararAuto.html" class="nav-link">Comparar</a></li>
+            <li class="nav-item"><a href="/paginas/agregarAuto.html" class="nav-link">Agregar Auto</a></li>
+            <li class="nav-item"><a href="/paginas/favoritos.html" class="nav-link">Ver favoritos</a></li>
+    </nav>
+
+    <div class="container4">
+        <h2>Buscar Autos</h2>
+        <label for="marcaInput">Marca:</label>
+        <input type="text" id="marcaInput" placeholder="Ingrese la marca...">
+        <label for="modeloInput">Modelo:</label>
+        <input type="text" id="modeloInput" placeholder="Ingrese el modelo...">
+
+        <button onclick="buscarAutos()">Buscar</button>
+
+        
+    </div>
+    
+    <div class="container4">
+    <div id="resultado"></div>
+    </div>
+
+   
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+    <script src="/scripts/filtrar.js"></script>
+</body>
+</html>

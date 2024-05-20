@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY COLECTION</title>
+    <link rel="stylesheet" href="/estilos/style2.css"/>
+    <link rel="icon" type="image/png" href="/assets/sparkar.svg" />
+</head>
+<body>
+    <section class="container">
+
+        <div class="image-section">
+            <div class="image-wrapper">
+                <img src="/assets/fondo.jpg" alt="">
+            </div>
+
+            <div class="content-container">
+                <h1 class="section-heading"><span>LUXURY COLECTION</span></h1>
+                <p class="section-paragraph">Descubra una colección incomparable de autos de lujo, deportivos y clásicos, donde cada pieza es una obra maestra de ingeniería y diseño.</p>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <div class="form-wrapper">
+                <div class="logo-container">
+                    <a href="/login.html" class="logo-container">
+                        <img src="/assets/logoPG.png" alt="Logo">
+                        <img src="/assets/sparkar.svg" alt="Logo">
+                    </a>
+                </div>
+
+                <h2>Bienvenido a LUXURY COLECTION! 👋🏻</h2>
+                <p>Ingrese sus credenciales para acceder a su cuenta.</p>
+
+                <div class="input-container">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+
+                <div class="remember-forgot">
+                    <div class="remember-me">
+                        <input type="checkbox" value="remember-me" id="remember-me">
+                        <label for="remember-me">Remember me</label>
+                    </div>
+
+                    <a href="#" id="forgot-password-link" onclick="contraseña()">Forgot password?</a>
+                </div>
+
+                <button class="login-btn" onclick="redirect()">           
+                    <span>Registrarse</span>
+                </button>
+
+                <button class="login-btn" onclick="validateLogin()">Log In</button>
+            </div>
+        </div>
+    </section>
+    <script src="/scripts/login.js"></script>
+</body>
+</html>
